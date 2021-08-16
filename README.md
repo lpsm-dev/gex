@@ -1,3 +1,45 @@
+<p align="center">
+  <img alt="azure" src="https://monophy.com/media/xT5LMrXlTYVYhaQnCg/monophy.gif" width="350px" float="center"/>
+</p>
+
+<h2 align="center">⚡️ [G-Earth](https://github.com/sirjonasxx/G-Python) extensions ⚡️</h2>
+
+<div align="center">
+
+[![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://gitlab.com/dry-group/cluster-management)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](https://gitlab.com/dry-group/cluster-management)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+
+</div>
+
+---
+
+<p align="center">
+  <img alt="pipelines" src="https://i.pinimg.com/originals/da/1d/dc/da1ddc79b5d815b6260855536c3df8fd.gif" width="450px" float="center"/>
+</p>
+
+<p align="center">
+  ✨ G-Earth + G-Python allows you to create simple scripts for Habbo and run them on the fly! ✨
+</p>
+
+<p align="center">
+  <a href="#about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#getting-started">Getting Started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#authors">Authors</a>
+</p>
+
+---
+
+## ➤ Getting Started <a name = "getting-started"></a>
+
+If you want contribute on this project, first you need to make a **git clone**:
+
+>
+> 1. git clone --depth 1 <https://github.com/lpmatos/g-extensions.git> -b master
+>
+
+This will give you access to the code on your **local machine**.
+
 ## ➤ Links <a name = "links"></a>
 
 - https://sulek.dev/api
@@ -13,7 +55,6 @@ Hey!! If you like this project or if you find some bugs feel free to contact me 
 > * Website: https://github.com/lpmatos
 > * Github: [@lpmatos](https://github.com/lpmatos)
 > * GitLab: [@lpmatos](https://gitlab.com/lpmatos)
-> * LinkedIn: [@luccapessoa](https://www.linkedin.com/in/luccapessoa/)
 >
 
 ## ➤ Versioning <a name = "versioning"></a>

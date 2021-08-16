@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  ✨ G-Earth + G-Python allows you to create simple scripts for Habbo and run them on the fly! ✨
+  ✨ A simple tool to make some stuffs with G-Earth ✨
 </p>
 
 <p align="center">
@@ -39,6 +39,54 @@ If you want contribute on this project, first you need to make a **git clone**:
 >
 
 This will give you access to the code on your **local machine**.
+
+## ➤ Prerequisites <a name = "prerequisites"></a>
+
+Before you start developing on this project you need to install some tools on your **local machine**:
+
+### Develop tools 
+
+- **python**
+
+### Support tools 
+
+- **pre-commit**
+
+For more information, access the [CONTRIBUTING](CONTRIBUTING.md) file.
+
+## ➤ Installing <a name = "installing"></a>
+
+To install support dependencies that handle commit and release standards, run the command:
+
+```bash
+make install
+```
+
+This shareable configuration use the following dependencies:
+
+- ⮚ [Semantic Release](https://github.com/semantic-release) + Plugins de configuração
+  - [`semantic-release`](https://github.com/semantic-release/semantic-release)
+  - [`@semantic-release/git`](https://github.com/semantic-release/git)
+  - [`@semantic-release/github`](https://github.com/semantic-release/github)
+  - [`@semantic-release/changelog`](https://github.com/semantic-release/changelog)
+  - [`@semantic-release/commit-analyzer`](https://github.com/semantic-release/commit-analyzer)
+  - [`@semantic-release/release-notes-generator`](https://github.com/semantic-release/release-notes-generator)
+- ⮚ [Commit Lint](https://github.com/conventional-changelog/commitlint) usando o [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
+  - [`commitizen`](https://github.com/commitizen/cz-cli)
+  - [`@commitlint/cli`](https://github.com/conventional-changelog/commitlint)
+  - [`@commitlint/config-conventional`](https://github.com/conventional-changelog/commitlint)
+
+For more information, access the [CONTRIBUTING](CONTRIBUTING.md) file.
+
+## ➤ Description <a name = "description"></a>
+
+<div align="center">
+
+<p align="center">
+  <img alt="gif-description" src="https://media3.giphy.com/media/5ziQ5kjh4lgCd29WOR/200w.gif?cid=82a1493b0uufgvz9tw6byen3bed3y7h9u0ilzpcuthz7a5ne&rid=200w.gif" width="250px" float="center"/>
+</p>
+
+</div>
 
 ## ➤ Links <a name = "links"></a>
 

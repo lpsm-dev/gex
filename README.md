@@ -91,6 +91,8 @@ For more information, access the [CONTRIBUTING](CONTRIBUTING.md) file.
 ## ➤ Links <a name = "links"></a>
 
 - https://sulek.dev/api
+- https://github.com/sirjonasxx/G-Earth
+- https://github.com/sirjonasxx/G-Python
 
 ## ➤ Author <a name = "author"></a>
 

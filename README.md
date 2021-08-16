@@ -1,8 +1,8 @@
 <p align="center">
-  <img alt="azure" src="https://monophy.com/media/xT5LMrXlTYVYhaQnCg/monophy.gif" width="350px" float="center"/>
+  <img alt="azure" src="https://i.pinimg.com/originals/e5/46/c4/e546c497e6a8a410a9d725b4f8dc2669.gif" width="350px" float="center"/>
 </p>
 
-<h2 align="center">⚡️ [G-Earth](https://github.com/sirjonasxx/G-Python) extensions ⚡️</h2>
+<h2 align="center">⚡️ <a href="https://github.com/sirjonasxx/G-Python">G-Earth</a> extensions ⚡️</h2>
 
 <div align="center">
 
@@ -15,7 +15,7 @@
 ---
 
 <p align="center">
-  <img alt="pipelines" src="https://i.pinimg.com/originals/da/1d/dc/da1ddc79b5d815b6260855536c3df8fd.gif" width="450px" float="center"/>
+  <img alt="pipelines" src="https://c.tenor.com/CRl1Stqo_awAAAAM/habbo-party.gif" width="450px" float="center"/>
 </p>
 
 <p align="center">

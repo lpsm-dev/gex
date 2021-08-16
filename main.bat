@@ -6,5 +6,5 @@ if not [%port%] == [] goto launch
 
 echo Launching xabbo.py on port %port%
 
-python "code\main.py" -p %port%
+python "gex\main.py" -p %port%
 pause

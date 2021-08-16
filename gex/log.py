@@ -2,16 +2,12 @@
 
 import logging
 from dataclasses import dataclass
-from typing import Any, Dict, NoReturn, Text
+from typing import Any, Dict, NoReturn
 
 import coloredlogs
 
-from src.constants import LOG_FORMAT
-from src.log_handlers import (
-    BaseRichHandler,
-    BaseStreamHandler,
-    ContextHandler,
-)
+from gex.constants import LOG_FORMAT
+from gex.log_handlers import BaseRichHandler, BaseStreamHandler, ContextHandler
 
 
 class SingletonLogger(type):
@@ -19,17 +15,17 @@ class SingletonLogger(type):
 
     def __call__(cls, *args, **kwargs) -> Any:
         if cls not in cls._instances:
-            cls._instances[cls] = super(SingletonLogger, cls).__call__(
-                *args, **kwargs
-            )
+            cls._instances[cls] = super(
+                SingletonLogger, cls
+            ).__call__(*args, **kwargs)
         return cls._instances[cls]
 
 
 @dataclass
 class Log(metaclass=SingletonLogger):
-    log_level: Text
-    log_type: Text
-    logger_name: Text
+    log_level: str
+    log_type: str
+    logger_name: str
 
     def __post_init__(self) -> NoReturn:
         self.log_formatter = LOG_FORMAT

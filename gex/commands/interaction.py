@@ -10,8 +10,7 @@ from gex.setup import date, ext, log
 
 
 class Interaction(CMD):
-    loop_awake, loop_autosit = True, True
-    blocked = False
+    (loop_awake, loop_autosit, loop_autosign, blocked) = (True, True, True, False)
     timeout = 30
 
     def init(self) -> None:
@@ -93,6 +92,23 @@ class Interaction(CMD):
                 '{in:Whisper}{i:2}{s:"Auto Sit disabled!"}{i:0}{i:33}{i:0}{i:-1}'
             )
 
+        if text == "!atsg on":
+            log.info("Autosign enabled!")
+            message.is_blocked = True
+            self.loop_autosign = True
+            ext.send_to_client(
+                '{in:Whisper}{i:2}{s:"Auto Sign enabled!"}{i:0}{i:33}{i:0}{i:-1}'
+            )
+            self.auto_sign()
+
+        if text == "!atsg off":
+            log.info("Autosign disabled!")
+            message.is_blocked = True
+            self.loop_autosign = False
+            ext.send_to_client(
+                '{in:Whisper}{i:2}{s:"Auto Sign disabled!"}{i:0}{i:33}{i:0}{i:-1}'
+            )
+
     def awake(self) -> None:
         """[summary]"""
         while self.loop_awake:
@@ -113,6 +129,13 @@ class Interaction(CMD):
     def auto_sit(self) -> None:
         """[summary]"""
         while self.loop_autosit:
-            log.info("Calling auto sit")
+            log.info("Calling Auto Sit")
             ext.send_to_server("{out:ChangePosture}{i:1}")
             sleep(0.1)
+
+    def auto_sign(self) -> None:
+        """[summary]"""
+        while self.loop_autosign:
+            log.info("Calling Auto Sign")
+            ext.send_to_server("{out:Sign}{i:1}")
+            sleep(3)

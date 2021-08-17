@@ -88,6 +88,8 @@ For more information, access the [CONTRIBUTING](CONTRIBUTING.md) file.
 
 </div>
 
+G-Earth + G-Python allows you to create simple scripts for Habbo and run them on the fly! So in this project we created a pattern to hinder the creation of these scripts.
+
 ## ➤ Commands <a name = "commands"></a>
 
 - `!awake on`: enable the mode for you to stay awake always 

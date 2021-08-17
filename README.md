@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  ✨ A simple tool to make some stuffs with G-Earth ✨
+  ✨ A simple project to automate some stuffs in Habbo with G-Earth ✨
 </p>
 
 <p align="center">

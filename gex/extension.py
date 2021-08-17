@@ -7,12 +7,12 @@ from g_python.gextension import Extension
 from g_python.hdirection import Direction
 from g_python.hmessage import HMessage
 
-from gex.common.constants import EX_INFO, EX_SETTINGS
+from gex.common.constants import EX_INFO
 
 
 class GExtension(Extension):
     def __init__(self) -> None:
-        super().__init__(EX_INFO, sys.argv, EX_SETTINGS, silent=False)
+        super().__init__(EX_INFO, sys.argv)
 
         self.on_event("double_click", lambda: print("Extension has been clicked"))
         self.on_event("init", lambda: self.on_connection_init())

@@ -76,7 +76,7 @@ class Interaction(CMD):
             )
 
         if text == "!ats on":
-            log.info("Autosit enabled!")
+            log.info("Auto Sit enabled!")
             message.is_blocked = True
             self.loop_autosit = True
             ext.send_to_client(
@@ -85,7 +85,7 @@ class Interaction(CMD):
             self.auto_sit()
 
         if text == "!ats off":
-            log.info("Autosit disabled!")
+            log.info("Auto Sit disabled!")
             message.is_blocked = True
             self.loop_autosit = False
             ext.send_to_client(
@@ -93,7 +93,7 @@ class Interaction(CMD):
             )
 
         if text == "!atsg on":
-            log.info("Autosign enabled!")
+            log.info("Auto Sign enabled!")
             message.is_blocked = True
             self.loop_autosign = True
             ext.send_to_client(
@@ -102,7 +102,7 @@ class Interaction(CMD):
             self.auto_sign()
 
         if text == "!atsg off":
-            log.info("Autosign disabled!")
+            log.info("Auto Sign disabled!")
             message.is_blocked = True
             self.loop_autosign = False
             ext.send_to_client(
@@ -131,11 +131,11 @@ class Interaction(CMD):
         while self.loop_autosit:
             log.info("Calling Auto Sit")
             ext.send_to_server("{out:ChangePosture}{i:1}")
-            sleep(0.1)
+            sleep(0.2)
 
     def auto_sign(self) -> None:
         """[summary]"""
         while self.loop_autosign:
             log.info("Calling Auto Sign")
             ext.send_to_server("{out:Sign}{i:1}")
-            sleep(3)
+            sleep(4)

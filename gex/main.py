@@ -2,7 +2,7 @@
 
 import sys
 
-from gex.commands.awake import AwakeCMD
+from gex.commands.interaction import Interaction
 from gex.setup import console, ext, markdown
 
 # ================================================
@@ -21,9 +21,8 @@ def main() -> None:
         print("Please, change the G-Earth port to 9092")
         sys.exit(1)
 
-    afk = AwakeCMD()
-    afk.init()
-
+    interaction = Interaction()
+    interaction.init()
 
 if __name__ == "__main__":
     main()

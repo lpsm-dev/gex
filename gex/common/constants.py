@@ -22,9 +22,11 @@ DATA_FORMAT = "YYYY-MM-DD HH:mm:ss"
 LOG_FORMAT = "%(levelname)s - %(asctime)s - %(message)s - %(funcName)s"
 LOG_LEVELS = ["CRITICAL", "ERROR", "WARNING", "INFO", "DEBUG", "NOTSET"]
 
+EX_TITLE = "GEX-tentions"
+EX_DESCRIPTION = "A simple tool to make some stuffs with G-Earth"
 EX_INFO = {
-    "title": "Anti AFK",
-    "description": "Habbo Anti AFK Mode",
+    "title": EX_TITLE,
+    "description": EX_DESCRIPTION,
     "version": __version__,
     "author": "lpmatos",
 }

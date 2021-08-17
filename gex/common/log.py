@@ -7,7 +7,8 @@ from typing import Any, Dict, NoReturn
 import coloredlogs
 
 from gex.common.constants import LOG_FORMAT, LOG_LEVELS
-from gex.common.log_handlers import BaseRichHandler, BaseStreamHandler, ContextHandler
+from gex.common.log_handlers import (BaseRichHandler, BaseStreamHandler,
+                                     ContextHandler)
 
 
 class SingletonLogger(type):

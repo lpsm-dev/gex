@@ -7,6 +7,7 @@ from gex import __version__
 from gex.common.constants import MARKDOWN_WELCOME
 from gex.common.log import Log
 from gex.extension import GExtension
+from gex.common.date import Date
 
 EX_TITLE = "GEX"
 EX_DESCRIPTION = "Gex is a tool to manage G-Earth extensions write using G-Python"
@@ -20,10 +21,11 @@ EX_INFO = {
 
 EX_SETTINGS = {"use_click_trigger": True, "can_leave": True, "can_delete": True}
 
-(console, markdown, log) = (
+(console, markdown, log, date) = (
     Console(),
     Markdown(MARKDOWN_WELCOME),
     Log("INFO", "rich", "logger").logger,
+    Date()
 )
 
 ext = GExtension()

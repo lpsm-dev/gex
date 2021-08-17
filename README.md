@@ -50,7 +50,7 @@ Before you start developing on this project you need to install some tools on yo
 
 ### Support tools
 
-- **pre-commit**
+- **npm**, **make**, **pre-commit**
 
 For more information, access the [CONTRIBUTING](CONTRIBUTING.md) file.
 

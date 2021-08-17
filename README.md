@@ -88,6 +88,11 @@ For more information, access the [CONTRIBUTING](CONTRIBUTING.md) file.
 
 </div>
 
+## ➤ Commands <a name = "commands"></a>
+
+- `!awake on`: enable the mode for you to stay awake always 
+- `!awake off`: disable the mode for you to stay awake always
+
 ## ➤ Links <a name = "links"></a>
 
 - https://sulek.dev/api

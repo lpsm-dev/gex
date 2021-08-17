@@ -4,7 +4,7 @@ Primeiramente, obrigado 🎉! É muito gratificante saber que podemos contar com
 
 O objetivo aqui é gerar valor para projetos de desenvolvimento com múltiplas participações. Com isso, sabemos que quando temos vários colaboradores interagindo dessa forma, a complexidade do trabalho aumenta significativamente. Pensando nisso elaboramos o documento **CONTRIBUTING.md**, que basicamente é onde abordarmos as melhores práticas a serem seguidas durante o processo de desenvolvimento no projeto, definindo o passo a passo de contribução para qualquer novo contribuidor, desde de o que ele precisa ter na sua máquina para entrar no processo, até o que ele precisa fazer para gerar uma nova versão da aplicação.
 
-Nessa perspectiva a padronização é algo que mais cedo ou mais tarde deve acontecer. Além dessa padronização é imprescindível uma boa comunicação interna, uma vez que de nada adianta ter um processo de trabalho padronizado e ninguém do time se comunicar. Definir um padrão de trabalho em equipe e ter uma boa comunicação mostra o quão maduro o seu time vai estar para colaborar e consequentemente colher os frutos em seu processo de automação, versionamento e pipeline. 
+Nessa perspectiva a padronização é algo que mais cedo ou mais tarde deve acontecer. Além dessa padronização é imprescindível uma boa comunicação interna, uma vez que de nada adianta ter um processo de trabalho padronizado e ninguém do time se comunicar. Definir um padrão de trabalho em equipe e ter uma boa comunicação mostra o quão maduro o seu time vai estar para colaborar e consequentemente colher os frutos em seu processo de automação, versionamento e pipeline.
 
 ## ➤ Tools, Packages and Conventions
 
@@ -53,7 +53,7 @@ Para garantir a consistência do nosso código fonte, lembre-se de seguir essas 
 Nesse projeto utilizamos a convenção do [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) como boa prática para criação de mensagens de commit, que é totalmente ligada a convenção [SemVer](https://semver.org/), responsável por ditar as regras de versionamentodo/release do código. A partir dessas convenções conseguimos utilizar plugins **npm** para automatizar todo nosso processo de geração de **tag/release**, tudo de forma automática e com base em regras pré-configuradas, podendo ser customizáveis de acordo com o cenário.
 
 >
-> 1. Crie uma **branch**. 
+> 1. Crie uma **branch**.
 > 1. Leia as regras de contribução.
 > 1. Siga a organização do repositório sempre que você for alterar ou adicionar coisas.
 > 1. Faça um **commit** com suas alterações.
@@ -146,7 +146,7 @@ cz-cli@4.0.3, cz-conventional-changelog@3.2.0
   perf:     A code change that improves performance
   test:     Adding missing tests or correcting existing tests
   build:    Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
-  ci:       Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs) 
+  ci:       Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
   chore:    Other changes that don't modify src or test files
   revert:   Reverts a previous commit
 ```

@@ -1,5 +1,6 @@
 name: "CI"
 
+# Trigger the workflow when the code is commited on main branch
 on:
   push:
     branches:

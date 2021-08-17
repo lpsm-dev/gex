@@ -1,4 +1,4 @@
-pylint==2.7.2
+pylint==2.9.6
 isort==5.8.0
 flake8==3.9.0
 mypy==0.812

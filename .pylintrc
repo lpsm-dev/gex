@@ -1,2 +1,5 @@
 [MESSAGES CONTROL]
 disable=missing-docstring,too-few-public-methods,line-too-long,unnecessary-lambda
+
+[TYPECHECK]
+ignored-classes=AntiAFK

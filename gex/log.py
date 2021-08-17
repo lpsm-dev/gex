@@ -6,8 +6,12 @@ from typing import Any, Dict, NoReturn
 
 import coloredlogs
 
-from gex.constants import LOG_FORMAT
-from gex.log_handlers import BaseRichHandler, BaseStreamHandler, ContextHandler
+from gex.constants import LOG_FORMAT, LOG_LEVELS
+from gex.log_handlers import (
+    BaseRichHandler,
+    BaseStreamHandler,
+    ContextHandler
+)
 
 
 class SingletonLogger(type):
@@ -15,9 +19,7 @@ class SingletonLogger(type):
 
     def __call__(cls, *args, **kwargs) -> Any:
         if cls not in cls._instances:
-            cls._instances[cls] = super(
-                SingletonLogger, cls
-            ).__call__(*args, **kwargs)
+            cls._instances[cls] = super(SingletonLogger, cls).__call__(*args, **kwargs)
         return cls._instances[cls]
 
 
@@ -33,7 +35,7 @@ class Log(metaclass=SingletonLogger):
         self.log_level = (
             self.log_level
             if self.log_level
-            in ["CRITICAL", "ERROR", "WARNING", "INFO", "DEBUG", "NOTSET"]
+            in LOG_LEVELS
             else None
         )
 

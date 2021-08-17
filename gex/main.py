@@ -25,38 +25,41 @@ from gex.log import Log
 
 ext = GExtension()
 
-LOOP = False
-
 # ================================================
-# FUNCTIONS
+# CLASS
 # ================================================
 
 
-def anti_afk() -> None:
-    global LOOP
-    while LOOP:
-        log.info("Calling anti afk...")
-        ext.send_to_server(HPacket("Whisper", "hi", 1, 1))
-        sleep(5)
+class AFK:
+    ext: GExtension
+    loop = True
+    timeout = 10
 
+    def init(self) -> None:
+        log.info("Initializing anti afk!")
+        ext.intercept_out(callback=self.speech_out, idd="Chat")
 
-# Função que intercepta pacotes de enviados pelo habbo - Saída de voz.
-def speech_out(message: HMessage) -> None:
-    global LOOP
-    packet = message.packet
-    text = packet.read_string()
+    def speech_out(self, message: HMessage) -> None:
+        packet = message.packet
+        text = packet.read_string()
 
-    if text == "!start":
-        message.is_blocked = True
-        LOOP = True
-        antiafk = threading.Thread(target=anti_afk)
-        antiafk.start()
-        log.info("Auto AFK Enabled!")
+        if text == "!start":
+            message.is_blocked = True
+            self.loop = True
+            antiafk = threading.Thread(target=self.anti_afk)
+            antiafk.start()
+            log.info("Auto AFK Enabled!")
 
-    if text == "!stop":
-        message.is_blocked = True
-        LOOP = False
-        log.info("Auto AFK Disabled!")
+        if text == "!stop":
+            message.is_blocked = True
+            self.loop = False
+            log.info("Auto AFK Disabled!")
+
+    def anti_afk(self) -> None:
+        while self.loop:
+            log.info("Calling anti afk...")
+            ext.send_to_server(HPacket("Whisper", "hi", 1, 1))
+            sleep(self.timeout)
 
 
 # ================================================
@@ -73,8 +76,9 @@ def main() -> None:
         print("Please, change the G-Earth port to 9092")
         sys.exit(1)
 
-    # Interceptação de mensagens que o meu habbo envia.
-    ext.intercept_out(callback=speech_out, mode="Chat")
+    afk = AFK()
+    afk.init()
+
 
 if __name__ == "__main__":
     main()

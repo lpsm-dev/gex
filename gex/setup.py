@@ -7,8 +7,4 @@ EX_INFO = {
     "author": "lpmatos",
 }
 
-EX_SETTINGS = {
-    "use_click_trigger": True,
-    "can_leave": True,
-    "can_delete": True
-}
+EX_SETTINGS = {"use_click_trigger": True, "can_leave": True, "can_delete": True}

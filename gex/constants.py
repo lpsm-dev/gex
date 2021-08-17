@@ -15,5 +15,9 @@ MARKDOWN_INTERACTIVE = """
 """
 
 TIMEZONE = "America/Sao_Paulo"
-LOG_FORMAT = "%(levelname)s - %(asctime)s - %(message)s - %(funcName)s"
 DATA_FORMAT = "YYYY-MM-DD HH:mm:ss"
+
+LOG_FORMAT = "%(levelname)s - %(asctime)s - %(message)s - %(funcName)s"
+LOG_LEVELS = ["CRITICAL", "ERROR",
+                "WARNING", "INFO",
+                "DEBUG", "NOTSET"]

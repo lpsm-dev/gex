@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import sys
 from typing import Callable, Union
 
@@ -12,10 +14,7 @@ class GExtension(Extension):
     def __init__(self) -> None:
         super().__init__(EX_INFO, sys.argv, EX_SETTINGS, silent=False)
 
-        self.on_event(
-            "double_click",
-            lambda: print("Extension has been clicked")
-        )
+        self.on_event("double_click", lambda: print("Extension has been clicked"))
         self.on_event("init", lambda: self.on_connection_init())
         self.on_event("connection_start", lambda: self.on_connection_start())
         self.on_event("connection_end", lambda: self.on_connection_end())

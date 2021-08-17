@@ -104,6 +104,8 @@ G-Earth + G-Python allows you to create simple scripts for Habbo and run them on
 - https://sulek.dev/api
 - https://github.com/sirjonasxx/G-Earth
 - https://github.com/sirjonasxx/G-Python
+- https://images.habbo.com/habbo-native-clients/launcher/HabboLauncher-Setup-1.0.31.exe
+- https://images.habbo.com/habbo-native-clients/launcher/HabboLauncher-1.0.31.dmg
 
 ## ➤ Author <a name = "author"></a>
 

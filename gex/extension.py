@@ -7,7 +7,7 @@ from g_python.gextension import Extension
 from g_python.hdirection import Direction
 from g_python.hmessage import HMessage
 
-from gex.setup import EX_INFO, EX_SETTINGS
+from gex.common.constants import EX_INFO, EX_SETTINGS
 
 
 class GExtension(Extension):

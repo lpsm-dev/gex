@@ -6,12 +6,8 @@ from typing import Any, Dict, NoReturn
 
 import coloredlogs
 
-from gex.constants import LOG_FORMAT, LOG_LEVELS
-from gex.log_handlers import (
-    BaseRichHandler,
-    BaseStreamHandler,
-    ContextHandler
-)
+from gex.common.constants import LOG_FORMAT, LOG_LEVELS
+from gex.common.log_handlers import BaseRichHandler, BaseStreamHandler, ContextHandler
 
 
 class SingletonLogger(type):
@@ -32,12 +28,7 @@ class Log(metaclass=SingletonLogger):
     def __post_init__(self) -> NoReturn:
         self.log_formatter = LOG_FORMAT
 
-        self.log_level = (
-            self.log_level
-            if self.log_level
-            in LOG_LEVELS
-            else None
-        )
+        self.log_level = self.log_level if self.log_level in LOG_LEVELS else None
 
         self._logger = logging.getLogger(self.logger_name)
         self._logger.setLevel(self.log_level)

@@ -2,49 +2,45 @@
 
 from setuptools import find_packages, setup
 
-from gex.version import __version__
-
-NAME = "gex"
+from gex import __app_name__, __version__
 
 SHORT_DESCRIPTION = """
-Gex is a tool for manage G-Earth extensions write using G-Python.""".strip()
+Gex is a tool for manage G-Earth extensions write using G-Python.
+""".strip()
 
 DEPENDENCIES = [
-    "arrow==1.0.3",
-    "bullet==2.2.0",
     "asciimatics==1.12.0",
     "coloredlogs==15.0",
-    "docopt==0.6.2",
+    "g-python==0.1.5",
     "python-json-logger==2.0.1",
     "rich==10.0.0",
 ]
 
+LICENSE = "MIT license"
 URL = "https://github.com/lpmatos/gex"
 EMAIL = "luccapsm@protonmail.com"
 AUTHOR = "Lucca Pessoa da Silva Matos"
 REQUIRES_PYTHON = ">=3.6.0"
-VERSION = __version__
 
 setup(
-    name=NAME,
+    name=__app_name__,
+    version=__version__,
     author=AUTHOR,
     author_email=EMAIL,
-    version=VERSION,
-    license="MIT license",
+    license=LICENSE,
     url=URL,
-    packages=find_packages(
-        include=[NAME], exclude=["tests", "*.tests", "*.tests.*", "tests.*"]
-    ),
-    package_data={NAME: ["py.typed"]},
+    packages=find_packages(exclude=["tests", "*.tests", "*.tests.*", "tests.*"]),
+    include_package_data=True,
     zip_safe=False,
     description=SHORT_DESCRIPTION,
+    long_description=__doc__,
     install_requires=DEPENDENCIES,
     python_requires=REQUIRES_PYTHON,
     entry_points=f"""
         [console_scripts]
-        {NAME}={NAME}.main:main
+        {__app_name__}={__app_name__}.main:main
     """,
-    keywords=["cli", "helm", "python"],
+    keywords=["cli", "g-earth", "g-python", "python"],
     classifiers=[
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
@@ -60,6 +56,6 @@ setup(
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
     project_urls={
-        "Repository": "https://github.com/lpmatos/gex",
+        "Repository": URL,
     },
 )

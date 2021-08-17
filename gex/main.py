@@ -11,8 +11,7 @@ from gex.setup import console, ext, markdown
 
 
 def main() -> None:
-    """[summary]
-    """
+    """[summary]"""
     console.print(markdown)
 
     try:
@@ -23,6 +22,7 @@ def main() -> None:
 
     interaction = Interaction()
     interaction.init()
+
 
 if __name__ == "__main__":
     main()

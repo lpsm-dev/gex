@@ -6,10 +6,16 @@
 
 <div align="center">
 
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=lpmatos_gex&metric=bugs)](https://sonarcloud.io/dashboard?id=lpmatos_gex)
 [![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://gitlab.com/dry-group/cluster-management)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](https://gitlab.com/dry-group/cluster-management)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
-[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/dashboard?id=lpmatos_gex)
+
+</div>
+
+<div align="center">
+
+[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-orange.svg)](https://sonarcloud.io/dashboard?id=lpmatos_gex)
 
 </div>
 

@@ -2,7 +2,7 @@
   <img alt="azure" src="https://i.pinimg.com/originals/e5/46/c4/e546c497e6a8a410a9d725b4f8dc2669.gif" width="350px" float="center"/>
 </p>
 
-<h2 align="center">⚡️ <a href="https://github.com/sirjonasxx/G-Python">G-Earth</a> extensions ⚡️</h2>
+<h2 align="center">⚡️ <a href="https://github.com/sirjonasxx/G-Earth">G-Earth</a> extensions ⚡️</h2>
 
 <div align="center">
 
@@ -44,11 +44,11 @@ This will give you access to the code on your **local machine**.
 
 Before you start developing on this project you need to install some tools on your **local machine**:
 
-### Develop tools 
+### Develop tools
 
 - **python**
 
-### Support tools 
+### Support tools
 
 - **pre-commit**
 
@@ -92,7 +92,7 @@ G-Earth + G-Python allows you to create simple scripts for Habbo and run them on
 
 ## ➤ Commands <a name = "commands"></a>
 
-- `!awake on`: enable the mode for you to stay awake always 
+- `!awake on`: enable the mode for you to stay awake always
 - `!awake off`: disable the mode for you to stay awake always
 
 ## ➤ Links <a name = "links"></a>

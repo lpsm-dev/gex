@@ -48,6 +48,10 @@ Before you start developing on this project you need to install some tools on yo
 
 - **python**
 
+### G-Earth tools
+
+- **java** version 8
+
 ### Support tools
 
 - **npm**, **make**, **pre-commit**

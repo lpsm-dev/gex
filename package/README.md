@@ -36,7 +36,7 @@ Then submit a PR!
 <div align="center">
 
 <p align="center">
-  <img alt="install" src="./icons/chocolatey-install.PNG" width="450px" float="center"/>
+  <img alt="install" src="./icons/chocolatey-install.PNG" width="650px" float="center"/>
 </p>
 
 </div>
@@ -46,7 +46,7 @@ Then submit a PR!
 <div align="center">
 
 <p align="center">
-  <img alt="uninstall" src="./icons/chocolatey-uninstall.PNG" width="450px" float="center"/>
+  <img alt="uninstall" src="./icons/chocolatey-uninstall.PNG" width="650px" float="center"/>
 </p>
 
 </div>

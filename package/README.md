@@ -33,20 +33,20 @@ Then submit a PR!
 
 ### Install
 
-<div align="center">
+<div align="left">
 
 <p align="center">
-  <img alt="install" src="./icons/chocolatey-install.PNG" width="650px" float="center"/>
+  <img alt="install" src="./icons/chocolatey-install.PNG" width="750px" float="center"/>
 </p>
 
 </div>
 
 ### Uninstall
 
-<div align="center">
+<div align="left">
 
 <p align="center">
-  <img alt="uninstall" src="./icons/chocolatey-uninstall.PNG" width="650px" float="center"/>
+  <img alt="uninstall" src="./icons/chocolatey-uninstall.PNG" width="750px" float="center"/>
 </p>
 
 </div>

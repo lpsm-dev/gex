@@ -28,6 +28,24 @@ class Interaction(CMD):
         packet = message.packet
         text = packet.read_string().lower()
 
+        if text == "!help":
+            message.is_blocked = True
+            ext.send_to_client(
+                '{in:Whisper}{i:2}{s:"Available commands:"}{i:0}{i:33}{i:0}{i:-1}'
+            )
+            ext.send_to_client(
+                '{in:Whisper}{i:2}{s:"!aw on and !aw off"}{i:0}{i:33}{i:0}{i:-1}'
+            )
+            ext.send_to_client(
+                '{in:Whisper}{i:2}{s:"!nt on and !nt off"}{i:0}{i:33}{i:0}{i:-1}'
+            )
+            ext.send_to_client(
+                '{in:Whisper}{i:2}{s:"!ats on and !ats off"}{i:0}{i:33}{i:0}{i:-1}'
+            )
+            ext.send_to_client(
+                '{in:Whisper}{i:2}{s:"!atsg on and !atsg off"}{i:0}{i:33}{i:0}{i:-1}'
+            )
+
         if text == "!aw help":
             log.info("Viewing awake helper")
             message.is_blocked = True

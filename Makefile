@@ -34,10 +34,10 @@ help:
 ##################################################
 
 verify:
-ifeq ($(GITLAB_TOKEN),)
-	@echo "ERROR: 🆘 no GITLAB_TOKEN was provided - undefined variable. Exiting." && exit 1
+ifeq ($(GITHUB_TOKEN),)
+	@echo "ERROR: 🆘 no GITHUB_TOKEN was provided - undefined variable. Exiting." && exit 1
 else
-	@echo "==> 🎊 We have a GITLAB_TOKEN!"
+	@echo "==> 🎊 We have a GITHUB_TOKEN!"
 endif
 
 global-requirements:

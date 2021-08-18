@@ -8,9 +8,11 @@
     <owners>lpmatos</owners>
     <tags>habbo launcher</tags>
     <summary>Install Habbo Launcher for Windows</summary>
-    <projectUrl>https://github.com/lpmatos/gex</projectUrl>
+    <projectUrl>https://www.habbo.com.br</projectUrl>
+    <projectSourceUrl>https://github.com/lpmatos/gex</projectSourceUrl>
+    <packageSourceUrl>https://github.com/lpmatos/gex</packageSourceUrl>
     <bugTrackerUrl>https://github.com/lpmatos/gex/issues</bugTrackerUrl>
-    <iconUrl>https://raw.githubusercontent.com/lpmatos/gex/main/choco/icons/habbo.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/lpmatos/gex/main/package/icons/habbo.png</iconUrl>
     <description>
     This package installs/uninstalls Habbo Launcher. 
 

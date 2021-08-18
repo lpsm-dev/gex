@@ -2,16 +2,15 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>habbo</id>
+    <title>Habbo Launcher (Install)</title>
     <version>1.0.31</version>
+    <authors>Sulake Corporation Ltd, Habbo</authors>
     <owners>lpmatos</owners>
-    <title>habbo</title>
-    <authors>Habbo, Sulake</authors>
+    <tags>habbo launcher</tags>
+    <summary>Install Habbo Launcher for Windows</summary>
     <projectUrl>https://github.com/lpmatos/gex</projectUrl>
-    <projectSourceUrl>https://github.com/lpmatos/gex</projectSourceUrl>
     <bugTrackerUrl>https://github.com/lpmatos/gex/issues</bugTrackerUrl>
     <iconUrl>https://raw.githubusercontent.com/lpmatos/gex/main/choco/icons/habbo.png</iconUrl>
-    <tags>habbo launcher</tags>
-    <summary>Habbo Launcher</summary>
     <description>
     This package installs/uninstalls Habbo Launcher. 
 

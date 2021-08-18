@@ -7,7 +7,8 @@
     <title>habbo</title>
     <authors>Habbo, Sulake</authors>
     <projectUrl>https://github.com/lpmatos/gex</projectUrl>
-    <packageSourceUrl>https://github.com/lpmatos/gex</packageSourceUrl>
+    <projectSourceUrl>https://github.com/lpmatos/gex</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/lpmatos/gex/issues</bugTrackerUrl>
     <iconUrl>https://raw.githubusercontent.com/lpmatos/gex/main/choco/icons/habbo.png</iconUrl>
     <tags>habbo launcher</tags>
     <summary>Habbo Launcher</summary>

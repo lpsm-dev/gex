@@ -9,7 +9,7 @@
     <projectUrl>https://github.com/lpmatos/gex</projectUrl>
     <packageSourceUrl>https://github.com/lpmatos/gex</packageSourceUrl>
     <iconUrl>https://raw.githubusercontent.com/lpmatos/gex/main/choco/icons/habbo.png</iconUrl>
-    <tags>habbo</tags>
+    <tags>habbo launcher</tags>
     <summary>Habbo Launcher</summary>
     <description>
     This package installs/uninstalls Habbo Launcher. 

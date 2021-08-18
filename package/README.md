@@ -12,11 +12,13 @@
 1. Then try install:
    ```
    choco install habbo -dv -s .
+   choco install habbo --version=1.0.31
    ```
 
 1. Then try uninstall:
    ```
    choco uninstall habbo -dv -s .
+   choco uninstall habbo --version=1.0.31
    ```
 
 1. Then try push:
@@ -26,6 +28,28 @@
    ```
 
 Then submit a PR!
+
+## Results
+
+### Install
+
+<div align="center">
+
+<p align="center">
+  <img alt="install" src="./icons/chocolatey-install.PNG" width="450px" float="center"/>
+</p>
+
+</div>
+
+### Uninstall
+
+<div align="center">
+
+<p align="center">
+  <img alt="uninstall" src="./icons/chocolatey-uninstall.PNG" width="450px" float="center"/>
+</p>
+
+</div>
 
 ## Links
 

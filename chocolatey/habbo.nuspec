@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>habbo</id>
+    <version>1.0.31</version>
+    <owners>lpmatos</owners>
+    <title>habbo</title>
+    <authors>Habbo, Sulake</authors>
+    <projectUrl>https://github.com/lpmatos/gex</projectUrl>
+    <packageSourceUrl>https://github.com/lpmatos/gex</packageSourceUrl>
+    <tags>habbo</tags>
+    <summary>Habbo Launcher</summary>
+    <description>
+    This package installs/uninstalls Habbo Launcher. 
+
+    Issues? Bugs? Suggestions? Create an issue on [GitHub](https://github.com/lpmatos/gex/)
+    </description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

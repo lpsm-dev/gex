@@ -6,6 +6,7 @@ from g_python.hmessage import HMessage
 from g_python.hpacket import HPacket
 
 from gex.commands.cmd import CMD
+from gex.commands.notyping import NoTypingCmd
 from gex.setup import date, ext, log
 
 
@@ -17,7 +18,8 @@ class Interaction(CMD):
         """[summary]"""
         log.info("Initializing awake command!")
         ext.intercept_out(self.speech_out, "Chat", "async_modify")
-        ext.intercept_out(self.typing, "StartTyping")
+        no_typing = NoTypingCmd(ext)
+        no_typing.init()
 
     def speech_out(self, message: HMessage) -> None:
         """[summary]
@@ -68,21 +70,6 @@ class Interaction(CMD):
             self.loop_awake = False
             ext.send_to_client(
                 '{in:Whisper}{i:2}{s:"Awake disabled!"}{i:0}{i:33}{i:0}{i:-1}'
-            )
-
-        if text == "!nt help":
-            log.info("Viewing notyping helper")
-            message.is_blocked = True
-            ext.send_to_client(
-                '{in:Whisper}{i:2}{s:"When you star to typing, your bubble will be removed :D"}{i:0}{i:33}{i:0}{i:-1}'
-            )
-
-        if text == "!nt on":
-            log.info("No Typing enabled!")
-            message.is_blocked = True
-            self.blocked = True
-            ext.send_to_client(
-                '{in:Whisper}{i:2}{s:"No Typing enabled!"}{i:0}{i:33}{i:0}{i:-1}'
             )
 
         if text == "!nt off":

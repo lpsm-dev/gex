@@ -99,7 +99,7 @@ For more information, access the [CONTRIBUTING](CONTRIBUTING.md) file.
 
 </div>
 
-G-Earth + G-Python allows you to create simple scripts for Habbo and run them on the fly! So in this project we created a pattern to hinder the creation of these scripts.
+G-Earth + G-Python allows you to create simple scripts for Habbo and run them on the fly! So in this project we created a pattern to hinder the creation of these scripts. G-Earth is a library for intercepting and manipulating Habbo packets, and G-Python is a library to create G-Earth extensions using Python code.
 
 ## ➤ Commands <a name = "commands"></a>
 

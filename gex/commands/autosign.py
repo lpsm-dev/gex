@@ -9,27 +9,10 @@ from g_python.hmessage import HMessage
 class AutoSign:
 
     def __init__(self, extension: Extension):
-        """[summary]
-
-        Args:
-            extension (Extension): [description]
-        """
         self.__ext = extension
         self.__loop_autosign = True
 
-    def init(self) -> None:
-        """[summary]
-        """
-        self.__ext.intercept_out(self.chat, "Chat", "async_modify")
-
-    def chat(self, message: HMessage) -> None:
-        """[summary]
-
-        Args:
-            message (HMessage): [description]
-        """
-        packet = message.packet
-        text = packet.read_string().lower()
+    def start(self, message: HMessage, text: str) -> None:
         if text == "!atsg on":
             message.is_blocked = True
             self.__loop_autosign = True
@@ -46,8 +29,6 @@ class AutoSign:
             )
 
     def auto_sit(self) -> None:
-        """[summary]
-        """
         while self.__loop_autosign:
             self.__ext.send_to_server("{out:Sign}{i:1}")
             sleep(4)

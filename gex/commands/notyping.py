@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from g_python.gextension import Extension
 from g_python.hmessage import HMessage
 
@@ -8,13 +10,7 @@ class NoTyping:
         self.__ext = extension
         self.__blocked = False
 
-    def init(self) -> None:
-        self.__ext.intercept_out(self.chat, "Chat", "async_modify")
-        self.__ext.intercept_out(self.typing, "StartTyping")
-
-    def chat(self, message: HMessage) -> None:
-        packet = message.packet
-        text = packet.read_string().lower()
+    def start(self, message: HMessage, text: str) -> None:
         if text == "!nt on":
             message.is_blocked = True
             self.__blocked = True
@@ -30,9 +26,4 @@ class NoTyping:
             )
 
     def typing(self, message: HMessage) -> None:
-        """[summary]
-
-        Args:
-            message (HMessage): [description]
-        """
         message.is_blocked = self.__blocked

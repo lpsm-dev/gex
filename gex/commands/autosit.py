@@ -11,12 +11,7 @@ class AutoSit:
         self.__ext = extension
         self.__loop_autosit = True
 
-    def init(self) -> None:
-        self.__ext.intercept_out(self.chat, "Chat", "async_modify")
-
-    def chat(self, message: HMessage) -> None:
-        packet = message.packet
-        text = packet.read_string().lower()
+    def start(self, message: HMessage, text: str) -> None:
         if text == "!ats on":
             message.is_blocked = True
             self.__loop_autosit = True

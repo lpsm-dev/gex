@@ -14,16 +14,12 @@ class NoTyping:
         if text == "!nt on":
             message.is_blocked = True
             self.__blocked = True
-            self.__ext.send_to_client(
-                '{in:Whisper}{i:2}{s:"No Typing enabled!"}{i:0}{i:33}{i:0}{i:-1}'
-            )
+            self.__ext.info("No Typing enabled!")
 
         if text == "!nt off":
             message.is_blocked = True
             self.__blocked = False
-            self.__ext.send_to_client(
-                '{in:Whisper}{i:2}{s:"No Typing disabled!"}{i:0}{i:33}{i:0}{i:-1}'
-            )
+            self.__ext.send_to_client("No Typing disabled!")
 
     def typing(self, message: HMessage) -> None:
         message.is_blocked = self.__blocked

@@ -20,17 +20,13 @@ class Awake:
         if text == "!aw on":
             message.is_blocked = True
             self.__loop_awake = True
-            self.__ext.send_to_client(
-                '{in:Whisper}{i:2}{s:"Awake enabled!"}{i:0}{i:33}{i:0}{i:-1}'
-            )
+            self.__ext.info("Awake enabled!")
             self.auto()
 
         if text == "!aw off":
             message.is_blocked = True
             self.__loop_awake = False
-            self.__ext.send_to_client(
-                '{in:Whisper}{i:2}{s:"Awake disabled!"}{i:0}{i:33}{i:0}{i:-1}'
-            )
+            self.__ext.info("Awake disabled!")
 
     def auto(self) -> None:
         while self.__loop_awake:

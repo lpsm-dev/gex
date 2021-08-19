@@ -6,6 +6,7 @@ from typing import Callable, Union
 from g_python.gextension import Extension
 from g_python.hdirection import Direction
 from g_python.hmessage import HMessage
+from g_python.hpacket import HPacket
 
 from gex.common.constants import EX_INFO
 
@@ -14,7 +15,8 @@ class GExtension(Extension):
     def __init__(self) -> None:
         super().__init__(EX_INFO, sys.argv)
 
-        self.on_event("double_click", lambda: print("Extension has been clicked"))
+        self.on_event("double_click", lambda: print(
+            "Extension has been clicked"))
         self.on_event("init", lambda: self.on_connection_init())
         self.on_event("connection_start", lambda: self.on_connection_start())
         self.on_event("connection_end", lambda: self.on_connection_end())
@@ -74,3 +76,13 @@ class GExtension(Extension):
             mode (str, optional): [description]. Defaults to "default".
         """
         self.intercept(Direction.TO_SERVER, callback, idd, mode)
+
+    def info(self, message: str):
+        """[summary]
+
+        Args:
+            message (str): [description]
+        """        
+        self.send_to_client(
+            HPacket("Whisper", -1, message, 0, 2, 0, 0)
+        )

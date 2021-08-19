@@ -5,6 +5,7 @@ from time import sleep
 from g_python.gextension import Extension
 from g_python.hmessage import HMessage
 
+
 class AutoSit:
 
     def __init__(self, extension: Extension):
@@ -15,20 +16,15 @@ class AutoSit:
         if text == "!ats on":
             message.is_blocked = True
             self.__loop_autosit = True
-            self.__ext.send_to_client(
-                '{in:Whisper}{i:2}{s:"Auto Sit enabled!"}{i:0}{i:33}{i:0}{i:-1}'
-            )
+            self.__ext.send_to_client("Auto Sit enabled!")
             self.auto()
 
         if text == "!ats off":
             message.is_blocked = True
             self.__loop_autosit = False
-            self.__ext.send_to_client(
-                '{in:Whisper}{i:2}{s:"Auto Sit disabled!"}{i:0}{i:33}{i:0}{i:-1}'
-            )
+            self.__ext.info("Auto Sit disabled!")
 
     def auto(self) -> None:
-        """[summary]"""
         while self.__loop_autosit:
             self.__ext.send_to_server("{out:ChangePosture}{i:1}")
             sleep(0.2)

@@ -11,7 +11,6 @@ from gex.setup import console, ext, markdown
 
 
 def main() -> None:
-    """[summary]"""
     console.print(markdown)
 
     try:

@@ -2,7 +2,7 @@
 
 import sys
 
-from gex.commands.interaction import Interaction
+from gex.commands.chat import Interaction
 from gex.setup import console, ext, markdown
 
 # ================================================

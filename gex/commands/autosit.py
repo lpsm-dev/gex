@@ -18,7 +18,7 @@ class AutoSit:
             self.__ext.send_to_client(
                 '{in:Whisper}{i:2}{s:"Auto Sit enabled!"}{i:0}{i:33}{i:0}{i:-1}'
             )
-            self.auto_sit()
+            self.auto()
 
         if text == "!ats off":
             message.is_blocked = True
@@ -27,7 +27,7 @@ class AutoSit:
                 '{in:Whisper}{i:2}{s:"Auto Sit disabled!"}{i:0}{i:33}{i:0}{i:-1}'
             )
 
-    def auto_sit(self) -> None:
+    def auto(self) -> None:
         """[summary]"""
         while self.__loop_autosit:
             self.__ext.send_to_server("{out:ChangePosture}{i:1}")

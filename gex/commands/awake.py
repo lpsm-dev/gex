@@ -23,7 +23,7 @@ class Awake:
             self.__ext.send_to_client(
                 '{in:Whisper}{i:2}{s:"Awake enabled!"}{i:0}{i:33}{i:0}{i:-1}'
             )
-            self.awake()
+            self.auto()
 
         if text == "!aw off":
             message.is_blocked = True
@@ -32,7 +32,7 @@ class Awake:
                 '{in:Whisper}{i:2}{s:"Awake disabled!"}{i:0}{i:33}{i:0}{i:-1}'
             )
 
-    def awake(self) -> None:
+    def auto(self) -> None:
         while self.__loop_awake:
             content = f"Datetime: {date.get_date_now()}"
             self.__ext.send_to_server(HPacket("Whisper", content, 1, 1))

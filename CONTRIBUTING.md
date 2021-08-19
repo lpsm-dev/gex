@@ -16,6 +16,7 @@ Ao enviar qualquer commit para esse repositório é de extrema importância que 
   - Este projeto não é um projeto **Node.js**. O arquivo `package.json` é usado apenas para definir alguns metadados e dependências que darão suporte para o nosso workflow no git.
 - ⮚ Automatizador de tarefas locais [make](https://www.gnu.org/software/make/manual/make.html).
 - ⮚ Scan de segredos [GitLeaks](https://github.com/zricethezav/gitleaks).
+- ⮚ Git hooks with [pre-commit](https://pre-commit.com)
 
 ### Packages
 
@@ -30,8 +31,6 @@ Ao enviar qualquer commit para esse repositório é de extrema importância que 
   - [`commitizen`](https://github.com/commitizen/cz-cli)
   - [`@commitlint/cli`](https://github.com/conventional-changelog/commitlint)
   - [`@commitlint/config-conventional`](https://github.com/conventional-changelog/commitlint)
-- ⮚ Git Hooks com [Husky](https://github.com/typicode/husky).
-  - [`husky`](https://github.com/semantic-release/git)
 
 ### Conventions
 

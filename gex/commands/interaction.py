@@ -8,6 +8,7 @@ from g_python.hpacket import HPacket
 from gex.commands.cmd import CMD
 from gex.commands.notyping import NoTyping
 from gex.commands.autosit import AutoSit
+from gex.commands.autosign import AutoSign
 from gex.setup import date, ext, log
 
 
@@ -17,11 +18,14 @@ class Interaction(CMD):
 
     def init(self) -> None:
         """[summary]"""
-        log.info("Initializing awake command!")
+        log.info("Initializing commands!")
         ext.intercept_out(self.speech_out, "Chat", "async_modify")
-        no_typing, auto_sit = NoTyping(ext), AutoSit(ext)
+        (no_typing,
+            auto_sit,
+            auto_sign) = NoTyping(ext), AutoSit(ext), AutoSign(ext)
         no_typing.init()
         auto_sit.init()
+        auto_sign.init()
 
     def speech_out(self, message: HMessage) -> None:
         """[summary]
@@ -67,23 +71,6 @@ class Interaction(CMD):
                 '{in:Whisper}{i:2}{s:"Awake disabled!"}{i:0}{i:33}{i:0}{i:-1}'
             )
 
-        if text == "!atsg on":
-            log.info("Auto Sign enabled!")
-            message.is_blocked = True
-            self.loop_autosign = True
-            ext.send_to_client(
-                '{in:Whisper}{i:2}{s:"Auto Sign enabled!"}{i:0}{i:33}{i:0}{i:-1}'
-            )
-            self.auto_sign()
-
-        if text == "!atsg off":
-            log.info("Auto Sign disabled!")
-            message.is_blocked = True
-            self.loop_autosign = False
-            ext.send_to_client(
-                '{in:Whisper}{i:2}{s:"Auto Sign disabled!"}{i:0}{i:33}{i:0}{i:-1}'
-            )
-
     def awake(self) -> None:
         """[summary]"""
         while self.loop_awake:
@@ -100,10 +87,3 @@ class Interaction(CMD):
         """
         log.info("Typing handler")
         message.is_blocked = self.blocked
-
-    def auto_sign(self) -> None:
-        """[summary]"""
-        while self.loop_autosign:
-            log.info("Calling Auto Sign")
-            ext.send_to_server("{out:Sign}{i:1}")
-            sleep(4)

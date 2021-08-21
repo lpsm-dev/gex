@@ -2,22 +2,30 @@ Primeiramente, obrigado 🎉! É muito gratificante saber que podemos contar com
 
 ## ➤ Overview
 
-O objetivo aqui é gerar valor para projetos de desenvolvimento com múltiplas participações. Com isso, sabemos que quando temos vários colaboradores interagindo dessa forma, a complexidade do trabalho aumenta significativamente. Pensando nisso elaboramos o documento **CONTRIBUTING.md**, que basicamente é onde abordarmos as melhores práticas a serem seguidas durante o processo de desenvolvimento no projeto, definindo o passo a passo de contribução para qualquer novo contribuidor, desde de o que ele precisa ter na sua máquina para entrar no processo, até o que ele precisa fazer para gerar uma nova versão da aplicação.
+Nosso objetivo aqui é gerar valor para projetos de desenvolvimento com múltiplas participações. Pensando nisso elaboramos um **CONTRIBUTING.md** para abordarmos as melhores práticas a serem seguidas durante o processo de desenvolvimento, definindo o passo a passo de contribução para qualquer novo contribuidor, desde de o que ele precisa ter em sua máquina, até o que ele precisa fazer para gerar uma nova release.
 
-Nessa perspectiva a padronização é algo que mais cedo ou mais tarde deve acontecer. Além dessa padronização é imprescindível uma boa comunicação interna, uma vez que de nada adianta ter um processo de trabalho padronizado e ninguém do time se comunicar. Definir um padrão de trabalho em equipe e ter uma boa comunicação mostra o quão maduro o seu time vai estar para colaborar e consequentemente colher os frutos em seu processo de automação, versionamento e pipeline.
+Além dessa padronização é imprescindível uma boa comunicação interna com os envolvidos no projeto, uma vez que de nada adianta ter um processo de trabalho padronizado e ninguém do time se comunicar. Por isso formentamos a criação de comunidades em alguma ferramenta de bate-papo, como: Slack, Teams, Telegram e etc, mas isso fica a cargo do time do projeto.
 
-## ➤ Tools, Packages and Conventions
+## ➤ Conventions, Tools and Packages
 
-Ao enviar qualquer commit para esse repositório é de extrema importância que o contribuidor saiba o que ele precisa refletir em seu ambiente local para que a sua contribução esteja seguindo as nossas diretrizes de trabalho. Portanto, nesse tópico listamos todas as ferramentas, pacotes e padrões utilizados pelos membros que colaboram aqui.
+Antes de qualquer commit para esse repositório é de extrema importância que o contribuidor saiba o que ele precisa refletir em seu ambiente local para que a sua contribução esteja seguindo as nossas diretrizes de trabalho. Portanto, nesse tópico listamos todas as ferramentas, pacotes e padrões utilizados pelos membros que colaboram aqui.
+
+### Conventions
+
+- ⮚ [Semantic Versioning](https://semver.org/)
+- ⮚ [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
 ### Tools
 
 - ⮚ Gerenciador de pacotes [NPM](https://www.npmjs.com/get-npm) ou [Yarn](https://yarnpkg.com/getting-started/install) para instação das dependências de suporte.
-  - Este projeto não é um projeto **Node.js**. O arquivo `package.json` é usado apenas para definir alguns metadados e dependências que darão suporte para o nosso workflow no git.
+  - Este projeto não é um projeto **node.js**. O arquivo `package.json` é usado apenas para definir alguns metadados e dependências que darão suporte para o nosso workflow no git.
 - ⮚ Automatizador de tarefas locais [make](https://www.gnu.org/software/make/manual/make.html).
-- ⮚ Scan de segredos [GitLeaks](https://github.com/zricethezav/gitleaks).
+- ⮚ Scan de segredos [gitLeaks](https://github.com/zricethezav/gitleaks).
+- ⮚ Mecanismo de controle de git hooks [pre-commit](https://pre-commit.com/#intro).
 
 ### Packages
+
+#### Semantic Release
 
 - ⮚ [Semantic Release](https://github.com/semantic-release) + Plugins de configuração
   - [`semantic-release`](https://github.com/semantic-release/semantic-release)
@@ -26,40 +34,34 @@ Ao enviar qualquer commit para esse repositório é de extrema importância que 
   - [`@semantic-release/changelog`](https://github.com/semantic-release/changelog)
   - [`@semantic-release/commit-analyzer`](https://github.com/semantic-release/commit-analyzer)
   - [`@semantic-release/release-notes-generator`](https://github.com/semantic-release/release-notes-generator)
+
+#### Conventional Commits
+
 - ⮚ [Commit Lint](https://github.com/conventional-changelog/commitlint) usando o [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
   - [`commitizen`](https://github.com/commitizen/cz-cli)
   - [`@commitlint/cli`](https://github.com/conventional-changelog/commitlint)
   - [`@commitlint/config-conventional`](https://github.com/conventional-changelog/commitlint)
-- ⮚ Git Hooks com [Husky](https://github.com/typicode/husky).
-  - [`husky`](https://github.com/semantic-release/git)
-
-### Conventions
-
-- ⮚ [Semantic Versioning](https://semver.org/)
-- ⮚ [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
 ## ➤ Regras de codificação
 
-Para garantir a consistência do nosso código fonte, lembre-se de seguir essas regras enquanto trabalhar:
+Nesse projeto utilizamos a convenção do [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) como boa prática para criação de mensagens de commit, que é totalmente ligada a convenção [SemVer](https://semver.org/), responsável por ditar as regras de versionamentodo/release do código. A partir dessas convenções conseguimos utilizar plugins **npm**, no caso o ecossistema [Semantic Release](https://github.com/semantic-release), para automatizar todo nosso processo de geração de **tag/release**, tudo de forma automática e com base em regras pré-configuradas, podendo ser customizáveis de acordo com o cenário. Essas regras estão definidas no arquivo `.releaserc.json` e `package.json`. Para garantir a consistência do nosso código fonte, lembre-se de seguir essas regras enquanto trabalhar:
 
-- ⮚ Antes de iniciar o desenvolvimento certifique-se de instalar todas as ferramentas abordadas na seção [Tools, Packages and Conventions](#-tools-packages-and-patterns).
-- ⮚ Sempre se certifique de não commitar nenhum arquivo com conteúdo sensível.
+- ⮚ Antes de iniciar o desenvolvimento certifique-se de instalar todas as ferramentas abordadas na seção [Conventions, Tools and Packages](#-conventions-tools-and-packages).
+- ⮚ Ao realizar um `git commit` opte por usar uma mensagem seguindo o padrão do [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
+- ⮚ Nunca realize uma operação de commit em uma branch estável.
+- ⮚ Verifique previamente seus arquivos commitados para nunca enviar algo com conteúdo sensível para o repositório remoto.
 - ⮚ Certifique-se de dar um `git rebase` antes de mesclar sua branch, isso vai evitar possíveis conflitos além de gerar um histórico linear das modificações.
 - ⮚ Faça um `git squash` dos commits, isso é uma boa prática para manter um histórico de commits mais limpo.
-- ⮚ Ao abrir um merge-request, certifique-se de comunicar os maintainers-owners do projeto.
+- ⮚ Ao abrir um merge-request, certifique-se de comunicar os `maintainers-owners` do projeto.
 
 ## ➤ Submission Guidelines
 
-Nesse projeto utilizamos a convenção do [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) como boa prática para criação de mensagens de commit, que é totalmente ligada a convenção [SemVer](https://semver.org/), responsável por ditar as regras de versionamentodo/release do código. A partir dessas convenções conseguimos utilizar plugins **npm** para automatizar todo nosso processo de geração de **tag/release**, tudo de forma automática e com base em regras pré-configuradas, podendo ser customizáveis de acordo com o cenário.
-
->
-> 1. Crie uma **branch**.
+> 1. Crie uma nova **branch** a partir de outra que faça sentido para o seu fluxo de trabalho.
 > 1. Leia as regras de contribução.
 > 1. Siga a organização do repositório sempre que você for alterar ou adicionar coisas.
 > 1. Faça um **commit** com suas alterações.
 > 1. Abra um **merge-request** assim que perceber que suas alterações estão prontas para serem promovidas.
 > 1. Espere até que seu **merge-request** seja aprovada... 🚀
->
 
 **Lembre-se**: Não existe código ruim, temos diferentes formas de resolver um mesmo problema. 😊
 
@@ -159,15 +161,20 @@ cz-cli@4.0.3, cz-conventional-changelog@3.2.0
 
 ## ➤Automatic versioning
 
-Each push to `master` triggers a [`semantic-release`](https://semantic-release.gitbook.io/semantic-release/) CI job that determines and pushes a new version tag (if any) based on the last version tagged and the new commits pushed. Notice that this means that if a Merge Request contains, for example, several `feat: ` commits, only one minor version bump will occur on merge. If your Merge Request includes several commits you may prefer to ignore the prefix on each individual commit and instead add an empty commit sumarizing your changes like so:
+A cada novo commit que você realiza é uma nova intenção que você gera. No final do dia você poderá ou não querer gerar uma nova release do seu código, mas uma coisa é certa: não será você que determinará a próxima versão de tag. Calma, isso não quer dizer que vamos rodar um monte de scripts para efetuar isso, muito pelo contrário, estaremos nos apoiando em convenções consolidadas no mercado de software, convenções essas que ao usar as devidas ferramentas, você consegue automaticamente determinar a sua próxima versão depois de ter realizado uma série de commits. As convenções nos debatemos acima e também qual é o conjunto de ferramenta/plugins que estamos utilizando, mas ainda temos alguns pontos para retratar:
+
+- Sempre que o seu código estiver na branch `release` você será capaz de gerar uma tag `release candite` ao executar o [`semantic-release`](https://semantic-release.gitbook.io/semantic-release/).
+- Sempre que o seu código estiver na branch `main` você será capaz de gerar uma tag `stable` ao executar o [`semantic-release`](https://semantic-release.gitbook.io/semantic-release/).
+
+A cada novo commit para uma dessas branches, em um determinado momento poderemos rodar o \[` semantic-release`\] (https://semantic-release.gitbook.io/semantic-release/) que determina e envia uma nova tag de versão (se houver) com base no última versão marcada e os novos commits enviados. Observe que isso significa que se um **merge-request** contém, por exemplo, vários commits de `feat:`, apenas um salto de versão **minor** ocorrerá na mesclagem. Se seu **merge-request** inclui vários commits, você pode preferir ignorar o prefixo em cada commit individual e, em vez disso, adicionar um commit vazio sumarizando suas alterações como:
 
 ```
 git commit --allow-empty -m '[BREAKING CHANGE|feat|fix]: <changelog summary message
 ```
 
-### Stable tag
+### CI
 
-This project updates a `stable:latest` tag in the container registry which tracks the latest build of the image specified in `STABLE_VERSION` in `.gitlab-ci.yml`. Simply update this to reflect what version series is considered stable by upstream and the `stable:latest` tag will be updated automatically.
+A sua pipeline poderá ou não incluir um template que possui esse job. Caso inclua, todo esse processo ocorre via pipeline e não irá necessitar de nenhuma ação local por parte do contribuidor.
 
 ## ➤ Release Steps
 

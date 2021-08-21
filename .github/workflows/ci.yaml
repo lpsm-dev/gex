@@ -26,6 +26,7 @@ jobs:
       uses: zricethezav/gitleaks-action@master
       with:
         config-path: .gitleaks.toml
+      continue-on-error: false
 
     - name: SonarCloud Scan
       uses: sonarsource/sonarcloud-github-action@master

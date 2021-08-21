@@ -103,7 +103,13 @@ G-Earth + G-Python allows you to create simple scripts for Habbo and run them on
 
 ## ➤ Visuals <a name = "visuals"></a>
 
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+<div align="center">
+
+<p align="center">
+  <img alt="gif-description" src="./assets/usage.PNG" width="450px" float="center"/>
+</p>
+
+</div>
 
 ## ➤ Usage <a name = "usage"></a>
 

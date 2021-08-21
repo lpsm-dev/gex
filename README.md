@@ -103,8 +103,14 @@ G-Earth + G-Python allows you to create simple scripts for Habbo and run them on
 
 ## ➤ Commands <a name = "commands"></a>
 
-- `!awake on`: enable the mode for you to stay awake always
-- `!awake off`: disable the mode for you to stay awake always
+- `!awake on`: enable awake mode
+- `!awake off`: disable awake mode
+- `!nt on`: enable no typing mode
+- `!nt off`: disable no typing mode
+- `!ats on`: enable auto sit mode
+- `!ats off`: disable auto sit mode
+- `!atsg on`: enable auto sign mode
+- `!atsg off`: disable auto sign mode
 
 ## ➤ Links <a name = "links"></a>
 

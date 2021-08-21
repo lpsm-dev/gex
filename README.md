@@ -101,7 +101,13 @@ For more information, access the [CONTRIBUTING](CONTRIBUTING.md) file.
 
 G-Earth + G-Python allows you to create simple scripts for Habbo and run them on the fly! So in this project we created a pattern to hinder the creation of these scripts. G-Earth is a library for intercepting and manipulating Habbo packets, and G-Python is a library to create G-Earth extensions using Python code.
 
-## ➤ Commands <a name = "commands"></a>
+## ➤ Visuals <a name = "visuals"></a>
+
+Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+
+## ➤ Usage <a name = "usage"></a>
+
+In habbo chat you can use the following commands:
 
 - `!awake on`: enable awake mode
 - `!awake off`: disable awake mode
@@ -148,6 +154,10 @@ If you have any problems, please contact [me](luccapsm@protonmail.com).
 ## ➤ License <a name = "license"></a>
 
 This repository is released under the [MIT license](https://opensource.org/licenses/MIT). In short, this means you are free to use this software in any personal, open-source or commercial projects. Attribution is optional but appreciated.
+
+## ➤ Project status <a name = "project-status"></a>
+
+Currently the project is being maintained and constantly changing with new features.
 
 ## ➤ Show your support <a name = "show-your-support"></a>
 

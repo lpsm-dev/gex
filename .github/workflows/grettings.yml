@@ -1,8 +1,6 @@
 name: Greetings
 
-# Trigger the workflow when a issue is created
-on:
-  issues:
+on: [pull_request, issues]
 
 jobs:
   greeting:

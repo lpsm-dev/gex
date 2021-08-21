@@ -2,7 +2,7 @@
   <img alt="azure" src="https://i.pinimg.com/originals/e5/46/c4/e546c497e6a8a410a9d725b4f8dc2669.gif" width="350px" float="center"/>
 </p>
 
-<h2 align="center">⚡️ <a href="https://github.com/sirjonasxx/G-Earth">G-Earth</a> extensions ⚡️</h2>
+<h2 align="center">⚡️ Habbo <a href="https://github.com/sirjonasxx/G-Earth">G-Earth</a> extensions ⚡️</h2>
 
 <div align="center">
 

@@ -14,7 +14,7 @@ DEPENDENCIES = [
     "coloredlogs==15.0",
     "g-python==0.1.5",
     "python-json-logger==2.0.1",
-    "rich==10.9.0",
+    "rich==10.14.0",
 ]
 
 LICENSE = "MIT license"

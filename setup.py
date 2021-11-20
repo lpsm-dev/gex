@@ -12,7 +12,7 @@ DEPENDENCIES = [
     "arrow==1.2.1",
     "asciimatics==1.12.0",
     "coloredlogs==15.0",
-    "g-python==0.1.5",
+    "g-python==0.1.6",
     "python-json-logger==2.0.1",
     "rich==10.14.0",
 ]

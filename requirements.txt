@@ -1,6 +1,6 @@
-arrow==1.0.3
+arrow==1.2.1
 asciimatics==1.13.0
 coloredlogs==15.0.1
-g-python==0.1.5
+g-python==0.1.6
 python-json-logger==2.0.2
-rich==10.9.0
+rich==10.14.0

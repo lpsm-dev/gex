@@ -42,7 +42,7 @@
 If you want contribute on this project, first you need to make a **git clone**:
 
 >
-> 1. git clone --depth 1 <https://github.com/lpmatos/g-extensions.git> -b master
+> 1. git clone --depth 1 <https://github.com/lpmatos/gex.git> -b master
 >
 
 This will give you access to the code on your **local machine**.

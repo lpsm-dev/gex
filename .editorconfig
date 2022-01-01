@@ -26,6 +26,9 @@ trim_trailing_whitespace = true
 indent_size = 4
 indent_style = tab
 
+[*.{py}]
+indent_size = 4
+
 # ================================================
 # 2 SPACE INDENTATION
 # ================================================

@@ -19,8 +19,8 @@ DEPENDENCIES = [
 
 LICENSE = "MIT license"
 URL = "https://github.com/lpmatos/gex"
-EMAIL = "luccapsm@protonmail.com"
-AUTHOR = "Lucca Pessoa da Silva Matos"
+EMAIL = "lpsm-dev@protonmail.com"
+AUTHOR = "CI Monk"
 REQUIRES_PYTHON = ">=3.6.0"
 
 setup(

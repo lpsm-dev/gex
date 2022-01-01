@@ -167,11 +167,13 @@ Currently the project is being maintained and constantly changing with new featu
 
 ## ➤ Show your support <a name = "show-your-support"></a>
 
-Give a ⭐️ if this project helped you!
-
----
-
 <div align="center">
+
+Give me a ⭐️ if this project helped you!
+
+<p>
+  <img alt="gif-header" src="https://www.icegif.com/wp-content/uploads/baby-yoda-bye-bye-icegif.gif" width="350px" float="center"/>
+</p>
 
 Made with 💜 by [me](https://github.com/lpmatos) :wave: inspired on [readme-md-generator](https://github.com/kefranabg/readme-md-generator)
 

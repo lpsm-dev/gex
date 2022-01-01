@@ -14,8 +14,10 @@
 # Secrets path
 .secrets/
 
-# Sonar scanner path
-.scannerwork/
+# General reports
+/report
+/reports
+.dccache
 
 # ================================================
 # VSCODE
@@ -36,6 +38,7 @@
 # ================================================
 
 npm-debug.log*
+package-lock.json
 
 # Dependency directories
 node_modules/

@@ -9,7 +9,7 @@ Gex is a tool for manage G-Earth extensions write using G-Python
 """.strip()
 
 DEPENDENCIES = [
-    "arrow==1.2.1",
+    "arrow==1.2.2",
     "asciimatics==1.12.0",
     "coloredlogs==15.0",
     "g-python==0.1.6",

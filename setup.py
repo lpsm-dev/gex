@@ -11,7 +11,7 @@ Gex is a tool for manage G-Earth extensions write using G-Python
 DEPENDENCIES = [
     "arrow==1.2.1",
     "asciimatics==1.12.0",
-    "coloredlogs==15.0",
+    "coloredlogs==15.0.1",
     "g-python==0.1.6",
     "python-json-logger==2.0.1",
     "rich==11.0.0",
